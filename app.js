@@ -7,5 +7,23 @@ $(document).ready(function () {
 	$(window).on("scroll load", function () {
 		$("#menu-bar").removeClass("fa-times");
 		$(".navbar").removeClass("nav-toggle");
+
+		$("section").each(function () {
+			let top = $(window).scrollTop();
+			let height = $(this).height();
+			let id = $(this).attr("id");
+			let offset = $(this).offset().top - 200;
+
+			if (top > offset && top < offset + height) {
+				$(".navbar ul li a").removeClass("active");
+				$(".navbar").find(`[href="#${id}"]`).addClass("active");
+			}
+		});
+	});
+
+	$(".menu .list .btn").click(function () {
+		$(this).addClass("active").siblings().removeClass("active");
+		let src = $(this).attr("data-src");
+		$("#menu-img").attr("src", src);
 	});
 });

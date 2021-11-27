@@ -73,6 +73,17 @@ section {
 	transform: scale(1.1);
 }
 
+.heading {
+	text-align: center;
+	font-size: 4rem;
+	padding: 0 0.5rem;
+	color: #333;
+}
+
+.heading span {
+	color: var(--green);
+}
+
 /* ******************************** Header Section *********************************** */
 header {
 	position: fixed;
@@ -160,6 +171,10 @@ header #menu-bar {
 }
 
 /* ******************************** About Section ************************************* */
+section.about {
+	min-height: 90vh;
+}
+
 .about {
 	background: #fff;
 	display: flex;
@@ -196,6 +211,82 @@ header #menu-bar {
 	padding: 1rem 0;
 	line-height: 1.6;
 	font-weight: lighter;
+}
+
+/* ******************************** Menu Section ************************************* */
+section.menu {
+	min-height: 90vh;
+}
+
+.menu .list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1rem 0;
+	margin: 2rem 0;
+	border-top: 0.3rem dashed rgba(0, 0, 0, 0.1);
+	border-bottom: 0.3rem dashed rgba(0, 0, 0, 0.1);
+}
+
+.menu .list .btn {
+	margin: 1rem;
+}
+
+.menu .list .btn.active,
+.menu .list .btn:hover {
+	background: var(--green);
+	color: #fff;
+}
+
+.menu .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: #fff;
+}
+
+.menu .row .image {
+	flex: 1 1 40rem;
+	margin: 2rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.menu .row .image img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 1rem;
+}
+
+.menu .row .content {
+	flex: 1 1 40rem;
+}
+
+.menu .row .content .info {
+	padding: 1rem 0;
+}
+
+.menu .row .content .info h3 {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	color: #333;
+}
+
+.menu .row .content .info h3 span {
+	padding-right: 1rem;
+	color: var(--green);
+}
+
+.menu .row .content .info p {
+	padding: 1rem 0;
+	padding-left: 3.5rem;
+	font-weight: lighter;
+	font-size: 1.5rem;
+	color: #666;
 }
 
 /* ******************************** Media Queries *********************************** */
@@ -268,6 +359,10 @@ header #menu-bar {
 	.home .content h3 {
 		font-size: 3.2rem;
 	}
+
+	.menu .row .content {
+		padding: 0 5%;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -301,7 +396,17 @@ header #menu-bar {
 	.about .image {
 		width: 90%;
 	}
+
 	.about .content p {
 		font-size: 2rem;
+	}
+
+	.menu .list {
+		flex-direction: column;
+	}
+
+	.menu .list li {
+		width: 80%;
+		text-align: center;
 	}
 }
