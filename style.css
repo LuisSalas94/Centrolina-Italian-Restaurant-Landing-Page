@@ -148,6 +148,7 @@ header #menu-bar {
 	padding: 1rem;
 	text-transform: none;
 	line-height: 1.4;
+	font-weight: lighter;
 }
 
 .home .image {
@@ -156,6 +157,45 @@ header #menu-bar {
 
 .home .image img {
 	width: 100%;
+}
+
+/* ******************************** About Section ************************************* */
+.about {
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.about .image {
+	flex: 1 1 40rem;
+	height: 50rem;
+	background: url(img/about-img.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	object-fit: cover;
+	background-blend-mode: screen;
+	border-radius: 0.5rem;
+}
+
+.about .content {
+	flex: 1 1 40rem;
+	padding: 2rem;
+}
+
+.about .content h3 {
+	font-size: 4rem;
+	color: #333;
+}
+
+.about .content p {
+	font-size: 1.6rem;
+	text-transform: none;
+	padding: 1rem 0;
+	line-height: 1.6;
+	font-weight: lighter;
 }
 
 /* ******************************** Media Queries *********************************** */
@@ -256,5 +296,12 @@ header #menu-bar {
 	.home .image img {
 		height: auto;
 		width: 90%;
+	}
+
+	.about .image {
+		width: 90%;
+	}
+	.about .content p {
+		font-size: 2rem;
 	}
 }
