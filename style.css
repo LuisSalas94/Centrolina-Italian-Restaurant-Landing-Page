@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	font-family: "Roboto", sans-serif;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all 0.2s linear;
+}
+
+:root {
+	--green: #00b5af;
+}
+
+h1,
+h3 {
+	font-family: "Oswald", sans-serif;
+}
+
+*::selection {
+	background-color: var(--green);
+	color: #fff;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #f4ede8;
+	overflow-x: hidden;
+	height: 200rem;
+}
+
+html::-webkit-scrollbar {
+	width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: var(--green);
+}
+
+section {
+	min-height: 100vh;
+	padding: 5rem 10%;
+}
+
+/* ******************************** Header Section *********************************** */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	background-color: #f1f2f6;
+	padding: 1.5rem 10%;
+	box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo img {
+	height: 5rem;
+	cursor: pointer;
+}
+
+header .navbar ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .navbar ul li {
+	margin-left: 3rem;
+}
+
+header .navbar ul li:hover {
+	transform: scale(1.1);
+}
+
+header .navbar ul li a {
+	font-size: 1.9rem;
+	color: #666;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+	color: var(--green);
+}
+
+header #menu-bar {
+	cursor: pointer;
+	color: var(--green);
+	font-size: 3rem;
+	display: none;
+}
+
+/* ******************************** Media Queries *********************************** */
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	/* header */
+	header .logo img {
+		height: 3rem;
+	}
+
+	header #menu-bar {
+		display: block;
+	}
+
+	header .navbar {
+		position: fixed;
+		top: 6rem;
+		left: 0;
+		width: 100%;
+		background-color: var(--green);
+		border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
+		transform: scaleY(0);
+		transform-origin: top;
+		opacity: 0;
+	}
+
+	header .navbar ul {
+		flex-direction: column;
+		padding: 2rem;
+	}
+
+	header .navbar ul li {
+		margin: 1.5rem;
+		width: 100%;
+	}
+
+	header .navbar ul li a {
+		display: block;
+		color: #fff;
+		padding-left: 1.5rem;
+		border-left: 0.2rem solid #fff;
+		font-size: 2rem;
+	}
+	header .navbar ul li a.active,
+	header .navbar ul li a:hover {
+		color: #333;
+		border-color: #333;
+	}
+
+	.fa-times {
+		transform: rotate(180deg);
+	}
+
+	header .navbar.nav-toggle {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
