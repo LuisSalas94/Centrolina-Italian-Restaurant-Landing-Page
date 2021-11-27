@@ -37,7 +37,6 @@ html {
 body {
 	background-color: #f4ede8;
 	overflow-x: hidden;
-	height: 200rem;
 }
 
 html::-webkit-scrollbar {
@@ -54,7 +53,24 @@ html::-webkit-scrollbar-thumb {
 
 section {
 	min-height: 100vh;
-	padding: 5rem 10%;
+	padding: 8rem 10%;
+}
+
+.btn {
+	font-size: 1.7rem;
+	padding: 0.7rem 4rem;
+	border-radius: 5rem;
+	margin-top: 1rem;
+	background: none;
+	color: #333;
+	cursor: pointer;
+	border: 0.2rem solid var(--green);
+}
+
+.btn:hover {
+	background-color: var(--green);
+	color: #fff;
+	transform: scale(1.1);
 }
 
 /* ******************************** Header Section *********************************** */
@@ -106,6 +122,40 @@ header #menu-bar {
 	color: var(--green);
 	font-size: 3rem;
 	display: none;
+}
+
+/* ******************************** Home Section ************************************* */
+.home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.home .content {
+	flex: 1 1 40rem;
+}
+
+.home .content h3 {
+	color: #333;
+	font-size: 6rem;
+}
+
+.home .content p {
+	color: #666;
+	font-size: 2rem;
+	padding: 1rem;
+	text-transform: none;
+	line-height: 1.4;
+}
+
+.home .image {
+	flex: 1 1 40rem;
+}
+
+.home .image img {
+	width: 100%;
 }
 
 /* ******************************** Media Queries *********************************** */
@@ -165,5 +215,46 @@ header #menu-bar {
 	header .navbar.nav-toggle {
 		transform: scaleY(1);
 		opacity: 1;
+	}
+
+	.home .content {
+		text-align: center;
+	}
+
+	.home .image {
+		text-align: center;
+	}
+
+	.home .content h3 {
+		font-size: 3.2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 50%;
+	}
+
+	header .navbar {
+		position: fixed;
+		top: 6rem;
+		left: 0;
+		width: 100%;
+		right: 0;
+		bottom: 0;
+	}
+
+	header .navbar ul li {
+		margin: 3.5rem;
+		width: 100%;
+	}
+
+	.home .content p {
+		padding: 2rem 0;
+	}
+
+	.home .image img {
+		height: auto;
+		width: 90%;
 	}
 }
