@@ -170,6 +170,17 @@ header #menu-bar {
 	width: 100%;
 }
 
+.home .btn {
+	background-color: var(--green);
+	color: #fff;
+}
+
+.home .btn:hover {
+	background-color: #fff;
+	color: var(--green);
+	transform: scale(1.1);
+}
+
 /* ******************************** About Section ************************************* */
 section.about {
 	min-height: 90vh;
@@ -287,6 +298,7 @@ section.menu {
 	font-weight: lighter;
 	font-size: 1.5rem;
 	color: #666;
+	text-transform: none;
 }
 
 /* ******************************** Popular Section ************************************* */
@@ -385,7 +397,7 @@ section.gallery {
 	transform: translate(-50%, -50%);
 	color: #fff;
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 	opacity: 0;
 }
 
@@ -408,6 +420,75 @@ section.gallery {
 
 .gallery .box-container .box:hover::before {
 	top: 0;
+}
+
+/* ******************************** Footer Section ************************************* */
+.footer {
+	background: #282727;
+	padding: 1rem 7%;
+}
+
+.footer .box-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+	flex: 1 1 25rem;
+	margin: 2rem;
+}
+
+.footer .box-container .box h3 {
+	font-size: 2.2rem;
+	color: #fff;
+	padding: 1rem 0;
+	font-weight: normal;
+	color: var(--green);
+}
+
+.footer .box-container .box p {
+	font-size: 1.5rem;
+	font-weight: lighter;
+	color: #eee;
+	padding: 1rem 0;
+}
+
+.footer .box-container .box a i,
+.footer .box-container .box p i {
+	color: var(--green);
+	padding-right: 0.5rem;
+	margin: 1rem 0;
+}
+
+.footer .box-container .box a {
+	font-size: 1.5rem;
+	color: #eee;
+	padding: 1rem 0;
+	display: block;
+}
+
+.footer .box-container .box a:hover {
+	color: var(--green);
+	transform: scale(1.1);
+}
+
+.footer .box-container .box a:hover i {
+	color: #fff;
+}
+
+.footer .credit {
+	font-size: 2rem;
+	text-align: center;
+	border-top: 0.2rem solid rgba(255, 255, 255, 0.7);
+	padding: 2rem 1rem;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	color: #fff;
+	text-transform: none;
+}
+
+.footer .credit a {
+	color: var(--green);
 }
 
 /* ******************************** Media Queries *********************************** */
@@ -511,7 +592,7 @@ section.gallery {
 
 	.home .image img {
 		height: auto;
-		width: 90%;
+		width: 100%;
 	}
 
 	.about .image {
@@ -542,5 +623,14 @@ section.gallery {
 	.gallery .box-container .box {
 		height: auto;
 		width: 90%;
+	}
+
+	.footer {
+		text-align: center;
+	}
+
+	.footer .box-container .box p,
+	.footer .box-container .box a {
+		font-size: 2rem;
 	}
 }

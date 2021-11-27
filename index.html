@@ -4,6 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- aos css cdn link -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<!-- font awesome -->
 		<link
 			rel="stylesheet"
@@ -30,7 +38,6 @@
 					<li><a href="#menu">menu</a></li>
 					<li><a href="#popular">popular</a></li>
 					<li><a href="#gallery">gallery</a></li>
-					<li><a href="#order">order</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -39,19 +46,24 @@
 		<!-- *************************** Home Section Starts ***************************** -->
 		<section class="home" id="home">
 			<!-- content -->
-			<div class="content">
+			<div class="content" data-aos="fade-right">
 				<h3>We believe good food offer great smile</h3>
 				<p>
 					Centrolina’s market reflects Chef Brandwein’s own experiences with
 					Italian cooking and contains the authentic products and produce that
-					she loves and cooks with.
+					she loves and cooks with.The Osteria features a frequently-rotating
+					menu, comprised of traditional Italian categories such as antipasti,
+					pasta, a lenga (from the terracotta-clad wood oven), contorni (side
+					dishes) and dolce. Guided by seasonally inspired dishes, Chef
+					Brandwein aims to maintain a sense of interconnectedness between her
+					kitchen and Centrolina’s retail wing.
 				</p>
 				<a href="#">
 					<button class="btn">get started</button>
 				</a>
 			</div>
 			<!-- image -->
-			<div class="image">
+			<div class="image" data-aos="fade-left">
 				<img src="img/home-img.png" alt="" />
 			</div>
 		</section>
@@ -60,9 +72,9 @@
 		<!-- *************************** About Section Starts ***************************** -->
 		<section class="about" id="about">
 			<!-- image -->
-			<div class="image"></div>
+			<div class="image" data-aos="fade-down"></div>
 			<!-- content -->
-			<div class="content">
+			<div class="content" data-aos="fade-up">
 				<h3>a word about us</h3>
 				<p>
 					The Mercato sells dried pasta from various Italian regions, as well as
@@ -91,7 +103,7 @@
 		<section class="menu" id="menu">
 			<h1 class="heading">our delicious <span>menu</span></h1>
 			<!-- list -->
-			<ul class="list">
+			<ul class="list" data-aos="fade-down">
 				<li class="btn" data-src="img/menu1.jpg">breakfast</li>
 				<li class="btn active" data-src="img/menu2.jpg">lunch</li>
 				<li class="btn" data-src="img/menu3.jpg">dinner</li>
@@ -102,43 +114,45 @@
 			<div class="row">
 				<!-- image -->
 				<div class="image">
-					<img src="img/menu2.jpg" id="menu-img" />
+					<img src="img/menu2.jpg" id="menu-img" data-aos="fade-down" />
 				</div>
 				<!-- content -->
-				<div class="content">
+				<div class="content" data-aos="fade-left">
 					<!-- info 1 -->
 					<div class="info">
-						<h3><span>01. </span> Lorem ipsum dolor sit amet.</h3>
+						<h3><span>01. </span> Italian Eggs</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-							vero!
+							Served with Parmesan cheese with some crusty bread on the side for
+							a perfect brunch!
 						</p>
 					</div>
 
 					<!-- info 2 -->
 					<div class="info">
-						<h3><span>02. </span> Lorem ipsum dolor sit amet.</h3>
+						<h3><span>02. </span> Italian Vegetable Pizzas</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-							vero!
+							For these easy appetizer pizzas, pile fresh asparagus, summer
+							squash, tomato, and cheese onto purchased Italian bread shells.
 						</p>
 					</div>
 
 					<!-- info 3 -->
 					<div class="info">
-						<h3><span>03. </span> Lorem ipsum dolor sit amet.</h3>
+						<h3><span>03. </span> Seafood Spaghetti</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-							vero!
+							The ultimate spaghetti Frutti di Mare recipe, made with baby
+							clams, mussels, squid and shrimp in a thick red Arrabiata sauce.
 						</p>
 					</div>
 
 					<!-- info 4 -->
 					<div class="info">
-						<h3><span>04. </span> Lorem ipsum dolor sit amet.</h3>
+						<h3><span>04. </span> Italian desserts</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-							vero!
+							Italian desserts are trending right now and it’s easy to see why!
+							With tiramisu and panna cotta, cannoli and semifreddo, we’re sure
+							you can find a sweet treat that will impress the nonnas, the
+							nannas plus any of your guests.
 						</p>
 					</div>
 				</div>
@@ -151,7 +165,7 @@
 			<h1 class="heading">most <span>popular</span> dishes</h1>
 			<div class="box-container">
 				<!-- box 1 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/pop1.jpg" alt="" />
 					<h3>GNOCCHI</h3>
 					<div class="starts">
@@ -168,7 +182,7 @@
 				</div>
 
 				<!-- box 2 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/pop2.jpg" alt="" />
 					<h3>PAPPARDELLE</h3>
 					<div class="starts">
@@ -185,7 +199,7 @@
 				</div>
 
 				<!-- box 3 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/pop3.jpg" alt="" />
 					<h3>PIZZA</h3>
 					<div class="starts">
@@ -202,7 +216,7 @@
 				</div>
 
 				<!-- box 4 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/pop4.jpg" alt="" />
 					<h3>CANNOLI</h3>
 					<div class="starts">
@@ -219,7 +233,7 @@
 				</div>
 
 				<!-- box 5 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/pop5.jpg" alt="" />
 					<h3>PANINI</h3>
 					<div class="starts">
@@ -236,7 +250,7 @@
 				</div>
 
 				<!-- box 6 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/pop6.jpg" alt="" />
 					<h3>BRUSCHETTA</h3>
 					<div class="starts">
@@ -260,55 +274,106 @@
 			<h1 class="heading">our food <span>gallery</span></h1>
 			<div class="box-container">
 				<!-- box 1 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/img1.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Grilled eggplant and tomato salad</h3>
 				</div>
 
 				<!-- box 2 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/img2.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Perfect Italian Cheese Board</h3>
 				</div>
 
 				<!-- box 3 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/img3.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Perfect Italian desserts</h3>
 				</div>
 
 				<!-- box 4 -->
-				<div class="box">
+				<div class="box" data-aos="fade-down">
 					<img src="img/img4.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Veggie Pizza</h3>
 				</div>
 
 				<!-- box 5 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/img5.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Italian Pasta</h3>
 				</div>
 
 				<!-- box 6 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/img6.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Carbonara Pasta</h3>
 				</div>
 
 				<!-- box 7 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/img7.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Grilled Pasta</h3>
 				</div>
 
 				<!-- box 8 -->
-				<div class="box">
+				<div class="box" data-aos="fade-up">
 					<img src="img/img8.jpg" alt="" />
-					<h3>Lorem ipsum dolor sit amet.</h3>
+					<h3>Pizza</h3>
 				</div>
 			</div>
 		</section>
 		<!-- *************************** Gallery Section Ends ***************************** -->
+
+		<!-- *************************** Footer Section Starts ***************************** -->
+		<div class="footer">
+			<div class="box-container">
+				<!-- box 1 -->
+				<div class="box">
+					<h3>contact info</h3>
+					<p><i class="fas fa-map-marker-alt"></i> lima, peru 404666</p>
+					<p><i class="fas fa-envelope"></i> test@gmail.com</p>
+					<p><i class="fas fa-phone"></i> +51 992-002-284</p>
+				</div>
+				<!-- box 2 -->
+				<div class="box">
+					<h3>branch location</h3>
+					<a href="#">india</a>
+					<a href="#">USA</a>
+					<a href="#">france</a>
+					<a href="#">peru</a>
+				</div>
+
+				<!-- box 3 -->
+				<div class="box">
+					<h3>quick links</h3>
+					<a href="#">home</a>
+					<a href="#">about</a>
+					<a href="#">menu</a>
+					<a href="#">popular</a>
+					<a href="#">gallery</a>
+					<a href="#">order</a>
+				</div>
+
+				<!-- box 4 -->
+				<div class="box">
+					<h3>follow us</h3>
+					<a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+					<a href="#"><i class="fab fa-facebook"></i> facebook</a>
+					<a href="#"><i class="fab fa-twitter"></i> twitter</a>
+					<a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+				</div>
+			</div>
+			<h1 class="credit">Created by <a href="#">Fernando Salas</a></h1>
+		</div>
+		<!-- *************************** Footer Section Ends ***************************** -->
+
+		<!-- aos js cdn link -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 
 		<!-- jquery -->
 		<script
@@ -320,5 +385,13 @@
 
 		<!-- js -->
 		<script src="app.js"></script>
+
+		<!-- initializing aos -->
+		<script>
+			AOS.init({
+				delay: 400,
+				duration: 1000,
+			});
+		</script>
 	</body>
 </html>
