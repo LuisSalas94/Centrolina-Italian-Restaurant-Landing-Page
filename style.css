@@ -308,7 +308,7 @@ section.menu {
 	margin: 3rem;
 	border-radius: 1rem;
 	box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
-	text-align: left;
+	text-align: center;
 	cursor: pointer;
 }
 
@@ -349,6 +349,65 @@ section.menu {
 .popular .box-container .box .btn:hover {
 	background-color: #fff;
 	color: var(--green);
+}
+
+/* ******************************** Gallery Section ************************************* */
+section.gallery {
+	min-height: 90vh;
+}
+
+.gallery .box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.gallery .box-container .box {
+	height: 20rem;
+	width: 30rem;
+	margin: 3.5rem;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery .box-container .box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.gallery .box-container .box h3 {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+	font-size: 2.5rem;
+	opacity: 0;
+}
+
+.gallery .box-container .box:hover h3 {
+	top: 50%;
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+
+.gallery .box-container .box::before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	transition: 0.2s linear;
+}
+
+.gallery .box-container .box:hover::before {
+	top: 0;
 }
 
 /* ******************************** Media Queries *********************************** */
@@ -474,5 +533,14 @@ section.menu {
 
 	.popular .box-container .box {
 		text-align: center;
+	}
+
+	.gallery .box-container .box h3 {
+		font-size: 2rem;
+	}
+
+	.gallery .box-container .box {
+		height: auto;
+		width: 90%;
 	}
 }
