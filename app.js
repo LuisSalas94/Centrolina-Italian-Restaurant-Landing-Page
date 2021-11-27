@@ -27,3 +27,8 @@ $(document).ready(function () {
 		$("#menu-img").attr("src", src);
 	});
 });
+
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", () => {
+	preloader.classList.add("hide-preloader");
+});

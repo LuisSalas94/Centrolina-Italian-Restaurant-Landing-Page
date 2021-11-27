@@ -491,6 +491,28 @@ section.gallery {
 	color: var(--green);
 }
 
+/* Preloader */
+.preloader {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+	z-index: 999;
+	transition: all 0.3s linear;
+}
+
+.hide-preloader {
+	z-index: -999;
+	visibility: hidden;
+}
+
 /* ******************************** Media Queries *********************************** */
 @media screen and (max-width: 768px) {
 	html {
