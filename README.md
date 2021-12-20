@@ -1,5 +1,8 @@
 # Centrolina Italian Restaurant - Landing Page
 
+![screencapture-file-F-2021-Ultimate-Software-Development-10-Projects-CSS-Landing-Pages-4-Centrolina-Italian-Restaurant-index-html-2021-12-20-10_10_29](https://user-images.githubusercontent.com/57297709/146789345-d4986196-b476-4abe-80a2-3ee75ef37419.png)
+
+![screencapture-file-F-2021-Ultimate-Software-Development-10-Projects-CSS-Landing-Pages-4-Centrolina-Italian-Restaurant-index-html-2021-12-20-10_11_23](https://user-images.githubusercontent.com/57297709/146789455-8e0effe2-0928-4b4c-91f2-9c8c73110640.png)
 
 Fully responsive landing page
 
@@ -32,7 +35,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [CEntrolina Restaurant ](https://www.centrolinadc.com/)
+- [Centrolina Restaurant ](https://www.centrolinadc.com/)
 
 
 ## 📝 License
