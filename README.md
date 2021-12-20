@@ -14,7 +14,7 @@ Fully responsive landing page
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://wizardly-ritchie-92775a.netlify.app/)
 
 ## Author
 
